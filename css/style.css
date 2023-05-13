@@ -1,0 +1,186 @@
+:root {                         /* Del más claro al más oscuro*/
+    --color1: #e0ade3;          
+    --color2: #c638c1;
+    --color3: #a012a7;
+    --color4: #772174;
+    --color5: #6d2672;
+}
+
+
+body {
+    font-family: 'Nixie One';
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, var(--color5) 0%, var(--color3) 50%, var(--color1) 100%);
+}
+
+
+
+nav {
+    background-color: white;
+}
+
+.logo {
+    padding: 0 5em 0 0em;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.menu {
+    color: var(--color2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    vertical-align: bottom;
+}
+
+.opcion {
+    display: flex;
+    justify-content: right;
+    font-size: 1rem;
+    margin: 0em;
+    padding: 0.4em;
+}
+
+.opcion:hover {
+    background-color: var(--color2);
+}
+
+.link1:link, .link1:visited {
+    color: var(--color3);
+    text-decoration:none;
+}
+
+
+/* ------------------------------------ */
+
+card {
+    border: 4px solid black;
+}
+card:hover {
+    transform: rotateY(180);
+}
+
+.card {
+    overflow: visible;
+    width: 190px;
+    height: 254px;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 5px;
+  }
+  
+  .front, .back {
+    background-color: #151515;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+
+  .back-content {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-color: #151515;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(180deg);
+  }
+  
+
+  .front {
+    transform: rotateY(180deg);
+    color: white;
+  }
+  
+  .front .front-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .front-content .badge {
+    background-color: #00000055;
+    padding: 2px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    width: fit-content;
+  }
+  
+  .description {
+    box-shadow: 0px 0px 10px 5px #00000088;
+    width: 100%;
+    padding: 10px;
+    background-color: #00000099;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+  }
+  
+  .title {
+    font-size: 11px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title p {
+    width: 50%;
+  }
+  
+  .card-footer {
+    color: #ffffff88;
+    margin-top: 5px;
+    font-size: 8px;
+  }
+  
+  .front .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #ffbb66;
+    position: relative;
+    filter: blur(15px);
+    animation: floating 2600ms infinite linear;
+  }
