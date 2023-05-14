@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-index.css">
     <link rel="icon" href="src/logos/shopy_icon_mini.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +18,14 @@
     <nav>
         <div class="menu">
             <div class="logo">
-                <img id="logo_nav" src="src/logos/shopy_logo.png" alt="Logo Shopy Store">
+                <a href="/index.html">
+                    <img id="logo_nav" src="src/logos/shopy_logo.png" alt="Logo Shopy Store">
+                </a>
             </div>
             <div class="opciones">
-                <a href="index.html" class="link1"><h2 class="opcion">Inicio</h2></a>
-                <a href="tienda.html" class="link1"><h2 class="opcion">Tienda</h2></a>
-                <a href="contacto.html" class="link1"><h2 class="opcion">Contacto</h2></a>
+                <a href="/index.html" class="link1"><h2 class="opcion">Inicio</h2></a>
+                <a href="/tienda.html" class="link1"><h2 class="opcion">Tienda</h2></a>
+                <a href="/contacto.html" class="link1"><h2 class="opcion">Contacto</h2></a>
             </div>
         </div>        
     </nav>
@@ -35,32 +37,38 @@
 
         <div class="container">
 
-            <div class="categoria">
+            <div class="categoria" id="categoria-hombre">
                 <div class="foto">
-                    <img src="src/categorias/hombre.jpg" alt="Hombre modelo" />
+                    <a href="/hombre.html"><img src="src/categorias/hombre.jpg" alt="Hombre modelo" /></a>
                 </div>
+                <a href="/hombre.html">
                 <div class="descripcion">
-                    <p><a href="/hombre.html">Hombre</a></p>
+                    <p>Hombre</p>
                 </div>
+                </a>
             </div>
 
-            <div class="categoria">
+            <div class="categoria" id="categoria-mujer">
                 <div class="foto">
-                    <img src="src/categorias/mujer.jpg" alt="Hombre modelo" />
+                    <a href="/mujer.html"><img src="src/categorias/mujer.jpg" alt="Hombre modelo" /></a>
                 </div>
-                <div class="descripcion">
-                    <p>Mujer</p>
-                </div>
+                <a href="/mujer.html">
+                    <div class="descripcion">
+                        <p>Mujer</p>
+                    </div>
+                </a>
             </div>
 
 
-            <div class="categoria">
+            <div class="categoria" id="categoria-niños">
                 <div class="foto">
-                    <img src="src/categorias/niños.jpg" alt="Hombre modelo" />
+                    <a href="/niños.html"><img src="src/categorias/niños.jpg" alt="Hombre modelo" /></a>
                 </div>
-                <div class="descripcion">
-                    <p>Niños</p>
-                </div>
+                <a href="/niños.html">
+                    <div class="descripcion">
+                        <p>Niños</p>
+                    </div>
+                </a>
             </div>
 
 
