@@ -1,9 +1,10 @@
 pullover boton de madera
 campera de ecocuero
 campera de jean
-saco cuelo de piel
+saco cuello de piel
 sueter verde
 campera ecocuero bordo negro
+camisa a cuadros
 
 
 sueter de hilo
@@ -12,3 +13,7 @@ campera ecocuero
 campera de algodon con capucha
 musculosa basica de algodon
 vestido manga 3/4
+
+cardigan
+vestido botones
+sueter de lana

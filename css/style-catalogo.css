@@ -1,4 +1,57 @@
-.container-catalogo {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+#hero {
+    height: 120vh;
 }
+
+.container-catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;    
+    gap: 60px 40px;
+}
+
+.producto {
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.producto .precio {
+    border-top: 1px solid black;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    width: 340px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.producto:hover .precio {
+    display: block;
+    opacity:1;
+}
+
+.producto:hover .descripcion {
+   background-color: rgba(223, 223, 223, 0.9)
+}
+
+
+.producto:hover img {
+    transform: scale(1.05);
+}
+
+.descripcion {
+    border-top: 1px solid black;
+    width: 350px;
+}
+
+.precio {
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
