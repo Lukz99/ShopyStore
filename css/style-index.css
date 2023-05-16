@@ -75,6 +75,7 @@ a {
 
 
 .opcion {
+  color: var(--color3);
   display: flex;
   font-size: 4rem;
   margin-bottom: 2px;
@@ -84,7 +85,10 @@ a {
 
 .opcion:hover {
     background-color: var(--color2);
+    color: var(--color1);
 }
+
+
 
 .container {
   flex-wrap: wrap;
@@ -141,4 +145,6 @@ img {
   height: 35px;
 }
 
-/* ------------------------------------ */
+.link1:link, .link1:visited {
+  color: var(--color3)
+}
