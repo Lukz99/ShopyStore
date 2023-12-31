@@ -1,11 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 #hero {
     display: flex;    
     justify-content: center;
-    align-items: flex-start;
-    
-    
+    align-items: flex-start;   
 }
-
 
 .container {
     margin: 22vh 0;
@@ -22,7 +24,7 @@
     width: 250px;
     height: 250px;
     flex-direction: column;
-    font-size: .35em; 
+    font-size: .35em;
 }
 
 .tarjeta div {
@@ -32,6 +34,7 @@
     justify-content: center;
     backface-visibility: hidden;
     transition: .7s ease;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .frente, .dorso{
@@ -95,4 +98,15 @@
 
 #gmail-text {
     font-size: 4em;
+}
+
+h1 {
+    font-size: 17px;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
